@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>POST UTME</title>
-         <link
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>POST UTME</title>
+    <link
       rel="shortcut icon"
       href="/POST-UTME/favicon_package/apple-touch-icon.png"
       type="image/x-icon"
@@ -43,322 +43,304 @@
       rel="safari-pinned-tab"
       href="/POST-UTME/favicon_package/safari-pinned-tab.svg"
     />
-        <meta
-          name="description"
-          content="The is perfect for both beginners and advanced users."
-        />
-        <meta name="author" content="JavaScript Ninja" />
-        <meta name="robots" content="index, follow" />
-        <style>
-          body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #e6d9d9;
-          }
-          h1 {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 36px;
-            font-weight: bold;
-            color: #333;
-          }
+    <meta
+      name="description"
+      content="The is perfect for both beginners and advanced users."
+    />
+    <meta name="author" content="JavaScript Ninja" />
+    <meta name="robots" content="index, follow" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #e6d9d9;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+      }
 
-          #quiz {
-            margin: 50px auto;
-            width: 350px;
-            padding: 30px;
-            border: 2px solid #333;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          }
+      #quiz {
+        margin: 50px auto;
+        width: 350px;
+        padding: 30px;
+        border: 2px solid #333;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
 
-          #question {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-          }
+      #question {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+      }
 
-          ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-          li {
-            margin-bottom: 10px;
-          }
+      li {
+        margin-bottom: 10px;
+      }
 
-          label {
-            font-size: 18px;
-            color: #333;
-          }
+      label {
+        font-size: 18px;
+        color: #333;
+      }
 
-          input[type="radio"] {
-            margin-right: 10px;
-          }
+      input[type="radio"] {
+        margin-right: 10px;
+      }
 
-          button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 20px;
-            font-weight: bold;
-            color: #fff;
-            background-color: #333;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-          }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
 
-          button:hover {
-            background-color: #111;
-          }
+      button:hover {
+        background-color: #111;
+      }
 
-          #feedback {
-            font-size: 20px;
-            margin-top: 20px;
-            color: #333;
-          }
+      #feedback {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #333;
+      }
 
-          #feedback p {
-            margin: 0;
-            padding: 0;
-          }
-          footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-          }
-         /* body quiz audio{
+      #feedback p {
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      /* body quiz audio{
             margin-bottom: 10px;
             text-align: center;
           } */
-        </style>
-      </head>
-      <body>
-             <audio autoplay loop>
-          <source
-            src="/POST-UTME/Aud/05-Davido-UNAVAILABLE-Ft-Musa-Keys-(JustNaija.com).mp3"
-            type="audio/mpeg"
-          />
-          <source
-            src="/POST-UTME/Aud/08-Davido-AWAY-(JustNaija.com).mp3"
-            type="audio/mpeg"
-          />
-          <source
-            src="/POST-UTME/Aud/Adekunle_Gold_Ft_Zinoleesky_-_Party_No_Dey_Stop.mp3"
-            type="audio/mpeg"
-          />
-          <source
-            src="/POST-UTME/Aud/khaid_Ft_Boy_Spyce_-_Carry_Me_Go.mp3"
-            type="audio/mpeg"
-          />
-          <source src="/POST-UTME/Aud/Lojay_-_Moto.mp3" type="audio/mpeg" />
-          <source src="/POST-UTME/Aud/Omah_Lay_-_Soso.mp3" type="audio/mpeg" />
-          <source src="/POST-UTME/Aud/Ruger_-_Asiwaju_Video_.mp3" type="audio/mpeg" />
-          <source src="/POST-UTME/Aud/Spyro_-_Who_Is_Your_Guy_.mp3" type="audio/mpeg" />
-          <source src="/POST-UTME/Aud/Asake_-_2_30.mp3">
-          <source src="/POST-UTME/Aud/Wizkid_-_Everyday.mp3">
-          <source src="/POST-UTME/Aud/Wizkid_-_Frames_Whos_Gonna_Know_.mp3">
-        </audio>
-        <h1>POST UTME</h1>
-        <div id="quiz">
-          <h2 id="question"></h2>
-          <ul id="choices"></ul>
-          <button onclick="checkAnswer()">Check Answer</button>
-          <div id="feedback"></div>
-        </div>
-          <script>
-          var audio = document.getElementsByTagName("audio")[0];
-          var source = audio.getElementsByTagName("source");
-          var index = Math.floor(Math.random() * source.length);
-          audio.src = source[index].src;
-          audio.load();
-        </script>
-        <script>
-          let questions = [
-           {
-              question: "Nigeria is a former ________ colony?",
-              choices: [
-                "American",
-                "French",
-                "British",
-                "Portuguese",
-              ],
-              answer: "British",
-            },
-            {
-              question:
-                "Sheep meat is called______",
-              choices: ["beef", "veal", "pork", "mutton"],
-              answer: "mutton",
-            },  
-          {
-              question: "The current life expectancy in Nigeria is",
-              choices: [
-                "55",
-                "51",
-                "39",
-                "47",
-              ],
-              answer: "55",
-            },
-            {
-              question: "Yumu and Zabara are ethnic groups in",
-              choices: [
-                "Benue State",
-                "Kebbie State",
-                "Niger State",
-                "Edo State",
-              ],
-              answer: "Niger State",
-            },
-            {
-              question:
-                "Mr Dele Giwa was killed through a letter bomb on",
-              choices: ["October 19, 1986", "September 17, 1987", "October 17, 1986", "September 17, 1986"],
-              answer: "October 19, 1986",
-            },
-            {
-              question: "The following are spices except",
-              choices: [
-                "rye",
-                "saffron",
-                "ginger",
-                "nutmeg",
-              ],
-              answer: "rye",
-            },
-            {
-              question:
-                "Nelson Mandela was awarded the Nobel Peace Price in",
-              choices: ["1996", "1994", "1992", "1993"],
-              answer: "1993",
-            },
-            {
-              question:
-                "Desmond Tutu was awarded the Nobel Peace Price in",
-              choices: ["1987", "2001", "2000", "1984"],
-              answer: "1984",
-            },
-            {
-              question:
-                "The Director-General of the Nigerian Institute of Advanced Legal Studies is",
-              choices: ["Prof. Pat Utomi", "Prof. Adekunle Adedeji SAN", "Justice Nikki Tobie", "Prof. (Mrs) Bolanle Awe"],
-              answer: "Prof. Adekunle Adedeji SAN",
-            },
-            {
-              question:
-                "Center of Unity is to Abuja a State of Hospitality is to",
-              choices: ["Sokoto", "Katsina", "Cross River", "Nasarawa"],
-              answer: "Katsina",
-            },
-            {
-              question:
-                "The capital of Uruguay is",
-              choices: [
-                "Bangkok",
-                "Montevideo",
-                "Bern",
-                "Uru",
-              ],
-              answer: "Montevideo",
-            },
-            {
-              question: "____________ was the Chief Justice of Nigeria between 1995 and 2006",
-              choices: [
-                "Justice Idris Lagbo Kutigi",
-                "Justice Mohammad Lawal Uwais",
-                "Justice George Sodeinde Sowemimo",
-                "Justice Mohammed Bello",
-              ],
-              answer: "Justice Mohammad Lawal Uwais",
-            },
-            {
-              question: "The capital of Iran is",
-              choices: ["Budapest", "Baghdad", "Tehran", "Iranian"],
-              answer: "Tehran",
-            },
-            {
-              question: "Ibeno Beach is in",
-              choices: [
-                "Taraba State",
-                "Niger State",
-                "Akwa Ibom State",
-                "Lagos State",
-              ],
-              answer: "Akwa Ibom State",
-            },
-            {
-              question:
-                "The June 12 Presidential Election was annulled by President Ibrahim Babangida on",
-              choices: ["June 14, 1993", "June 23, 1993", "June 27, 1993", "June 12, 1993"],
-              answer: "June 23, 1993",
-            },
-             {
-              question: "Who is the Governor General of Nigeria between 1914-1919",
-              choices: [
-                "Sir Donald Cameron",
-                "Sir Fredrick Lugard",
-                "Sir James Robertson",
-                "Edo State",
-              ],
-              answer: "Sir Fredrick Lugard",
-            },
-            {
-              question:
-                "The 2006 population census in Nigeria put it population at about",
-              choices: ["120million", "140million", "230million", "150million"],
-              answer: "140million",
-            },
-             {
-              question: "Yumu and Zabara are ethnic groups in",
-              choices: [
-                "Benue State",
-                "Kebbie State",
-                "Niger State",
-                "Edo State",
-              ],
-              answer: "Niger State",
-            },
-            {
-              question:
-                "Mr Dele Giwa was killed through a letter bomb on",
-              choices: ["October 19, 1986", "September 17, 1987", "October 17, 1986", "September 17, 1986"],
-              answer: "October 19, 1986",
-            },
-             {
-              question: "Which of the following represent the cheapest mode of transportation?",
-              choices: [
-                "water",
-                "air",
-                "rail",
-                "road",
-              ],
-              answer: "road",
-            },
-          ];
-          let currentQuestion = 0;
-          let score = 0;
-          let question = document.getElementById("question");
-          let choices = document.getElementById("choices");
-          let feedback = document.getElementById("feedback");
+    </style>
+  </head>
+  <body>
+    <audio autoplay>
+      <source
+        src="/POST-UTME/Aud/05-Davido-UNAVAILABLE-Ft-Musa-Keys-(JustNaija.com).mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="/POST-UTME/Aud/08-Davido-AWAY-(JustNaija.com).mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="/POST-UTME/Aud/Adekunle_Gold_Ft_Zinoleesky_-_Party_No_Dey_Stop.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="/POST-UTME/Aud/khaid_Ft_Boy_Spyce_-_Carry_Me_Go.mp3"
+        type="audio/mpeg"
+      />
+      <source src="/POST-UTME/Aud/Lojay_-_Moto.mp3" type="audio/mpeg" />
+      <source src="/POST-UTME/Aud/Omah_Lay_-_Soso.mp3" type="audio/mpeg" />
+      <source
+        src="/POST-UTME/Aud/Ruger_-_Asiwaju_Video_.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="/POST-UTME/Aud/Spyro_-_Who_Is_Your_Guy_.mp3"
+        type="audio/mpeg"
+      />
+      <source src="/POST-UTME/Aud/Asake_-_2_30.mp3" />
+      <source src="/POST-UTME/Aud/Wizkid_-_Everyday.mp3" />
+      <source src="/POST-UTME/Aud/Wizkid_-_Frames_Whos_Gonna_Know_.mp3" />
+    </audio>
+    <h1>POST UTME</h1>
+    <div id="quiz">
+      <h2 id="question"></h2>
+      <ul id="choices"></ul>
+      <button onclick="checkAnswer()">Check Answer</button>
+      <div id="feedback"></div>
+    </div>
+    <script>
+      var audio = document.getElementsByTagName("audio")[0];
+      var source = audio.getElementsByTagName("source");
+      var index = Math.floor(Math.random() * source.length);
+      audio.src = source[index].src;
+      audio.load();
+    </script>
+    <script>
+      let questions = [
+        {
+          question: "Nigeria is a former ________ colony?",
+          choices: ["American", "French", "British", "Portuguese"],
+          answer: "British",
+        },
+        {
+          question: "Sheep meat is called______",
+          choices: ["beef", "veal", "pork", "mutton"],
+          answer: "mutton",
+        },
+        {
+          question: "The current life expectancy in Nigeria is",
+          choices: ["55", "51", "39", "47"],
+          answer: "55",
+        },
+        {
+          question: "Yumu and Zabara are ethnic groups in",
+          choices: ["Benue State", "Kebbie State", "Niger State", "Edo State"],
+          answer: "Niger State",
+        },
+        {
+          question: "Mr Dele Giwa was killed through a letter bomb on",
+          choices: [
+            "October 19, 1986",
+            "September 17, 1987",
+            "October 17, 1986",
+            "September 17, 1986",
+          ],
+          answer: "October 19, 1986",
+        },
+        {
+          question: "The following are spices except",
+          choices: ["rye", "saffron", "ginger", "nutmeg"],
+          answer: "rye",
+        },
+        {
+          question: "Nelson Mandela was awarded the Nobel Peace Price in",
+          choices: ["1996", "1994", "1992", "1993"],
+          answer: "1993",
+        },
+        {
+          question: "Desmond Tutu was awarded the Nobel Peace Price in",
+          choices: ["1987", "2001", "2000", "1984"],
+          answer: "1984",
+        },
+        {
+          question:
+            "The Director-General of the Nigerian Institute of Advanced Legal Studies is",
+          choices: [
+            "Prof. Pat Utomi",
+            "Prof. Adekunle Adedeji SAN",
+            "Justice Nikki Tobie",
+            "Prof. (Mrs) Bolanle Awe",
+          ],
+          answer: "Prof. Adekunle Adedeji SAN",
+        },
+        {
+          question: "Center of Unity is to Abuja a State of Hospitality is to",
+          choices: ["Sokoto", "Katsina", "Cross River", "Nasarawa"],
+          answer: "Katsina",
+        },
+        {
+          question: "The capital of Uruguay is",
+          choices: ["Bangkok", "Montevideo", "Bern", "Uru"],
+          answer: "Montevideo",
+        },
+        {
+          question:
+            "____________ was the Chief Justice of Nigeria between 1995 and 2006",
+          choices: [
+            "Justice Idris Lagbo Kutigi",
+            "Justice Mohammad Lawal Uwais",
+            "Justice George Sodeinde Sowemimo",
+            "Justice Mohammed Bello",
+          ],
+          answer: "Justice Mohammad Lawal Uwais",
+        },
+        {
+          question: "The capital of Iran is",
+          choices: ["Budapest", "Baghdad", "Tehran", "Iranian"],
+          answer: "Tehran",
+        },
+        {
+          question: "Ibeno Beach is in",
+          choices: [
+            "Taraba State",
+            "Niger State",
+            "Akwa Ibom State",
+            "Lagos State",
+          ],
+          answer: "Akwa Ibom State",
+        },
+        {
+          question:
+            "The June 12 Presidential Election was annulled by President Ibrahim Babangida on",
+          choices: [
+            "June 14, 1993",
+            "June 23, 1993",
+            "June 27, 1993",
+            "June 12, 1993",
+          ],
+          answer: "June 23, 1993",
+        },
+        {
+          question: "Who is the Governor General of Nigeria between 1914-1919",
+          choices: [
+            "Sir Donald Cameron",
+            "Sir Fredrick Lugard",
+            "Sir James Robertson",
+            "Edo State",
+          ],
+          answer: "Sir Fredrick Lugard",
+        },
+        {
+          question:
+            "The 2006 population census in Nigeria put it population at about",
+          choices: ["120million", "140million", "230million", "150million"],
+          answer: "140million",
+        },
+        {
+          question: "Yumu and Zabara are ethnic groups in",
+          choices: ["Benue State", "Kebbie State", "Niger State", "Edo State"],
+          answer: "Niger State",
+        },
+        {
+          question: "Mr Dele Giwa was killed through a letter bomb on",
+          choices: [
+            "October 19, 1986",
+            "September 17, 1987",
+            "October 17, 1986",
+            "September 17, 1986",
+          ],
+          answer: "October 19, 1986",
+        },
+        {
+          question:
+            "Which of the following represent the cheapest mode of transportation?",
+          choices: ["water", "air", "rail", "road"],
+          answer: "road",
+        },
+      ];
+      let currentQuestion = 0;
+      let score = 0;
+      let question = document.getElementById("question");
+      let choices = document.getElementById("choices");
+      let feedback = document.getElementById("feedback");
 
-          function displayQuestion() {
-            question.innerHTML = questions[currentQuestion].question;
-            let choicesHTML = "";
-            for (
-              let i = 0;
-              i < questions[currentQuestion].choices.length;
-              i++
-            ) {
-              choicesHTML += `
+      function displayQuestion() {
+        question.innerHTML = questions[currentQuestion].question;
+        let choicesHTML = "";
+        for (let i = 0; i < questions[currentQuestion].choices.length; i++) {
+          choicesHTML += `
         <li>
           <label>
             <input type="radio" name="choice" value="${questions[currentQuestion].choices[i]}">
@@ -366,49 +348,45 @@
           </label>
         </li>
       `;
-            }
-            choices.innerHTML = choicesHTML;
-          }
+        }
+        choices.innerHTML = choicesHTML;
+      }
 
-          // function to check the user's answer
-          function checkAnswer() {
-            let userAnswer = document.querySelector(
-              'input[name="choice"]:checked'
-            );
-            if (!userAnswer) {
-              feedback.innerHTML = "<p>Please select an answer.</p>";
-              return;
-            }
-            if (userAnswer.value === questions[currentQuestion].answer) {
-              feedback.innerHTML = "<p>Correct!</p>";
-              score++;
-            } else {
-              feedback.innerHTML = `<p>Sorry, the correct answer was ${questions[currentQuestion].answer}.</p>`;
-            }
+      // function to check the user's answer
+      function checkAnswer() {
+        let userAnswer = document.querySelector('input[name="choice"]:checked');
+        if (!userAnswer) {
+          feedback.innerHTML = "<p>Please select an answer.</p>";
+          return;
+        }
+        if (userAnswer.value === questions[currentQuestion].answer) {
+          feedback.innerHTML = "<p>Correct!</p>";
+          score++;
+        } else {
+          feedback.innerHTML = `<p>Sorry, the correct answer was ${questions[currentQuestion].answer}.</p>`;
+        }
 
-            currentQuestion++;
+        currentQuestion++;
 
-            if (currentQuestion < questions.length) {
-              displayQuestion();
-            } else {
-              quiz.innerHTML = `<h2>You scored ${score} out of ${questions.length}.</h2>`;
-            }
-          }
-
-          // display the first question
+        if (currentQuestion < questions.length) {
           displayQuestion();
+        } else {
+          quiz.innerHTML = `<h2>You scored ${score} out of ${questions.length}.</h2>`;
+        }
+      }
 
-          // add event listener to the "Check Answer" button
-          checkButton.addEventListener("click", checkAnswer);
-        </script>
-        <footer>&copy; JavaScript Ninja - <span id="year"></span></footer>
-        <script>
-          // JavaScript code here
-          const yearSpan = document.getElementById("year");
-          const currentYear = new Date().getFullYear();
-          yearSpan.textContent = currentYear;
-        </script>
-      </body>
-    </html>
+      // display the first question
+      displayQuestion();
+
+      // add event listener to the "Check Answer" button
+      checkButton.addEventListener("click", checkAnswer);
+    </script>
+    <footer>&copy; JavaScript Ninja - <span id="year"></span></footer>
+    <script>
+      // JavaScript code here
+      const yearSpan = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      yearSpan.textContent = currentYear;
+    </script>
   </body>
 </html>
